@@ -28,7 +28,7 @@ public class Main
       }
       return count;
     }
-    Scanner scanner = new scanner(System.in)
+    Scanner scanner = new scanner(System.in);
     System.out.print("Enter an integer from 0 and 50: ");
     int number = scanner.nextInt();
 
