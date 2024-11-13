@@ -29,6 +29,25 @@ public class Main
       return count;
     }
     Scanner scanner = new scanner(System.in)
-    System.out.print("Enter an inte")  
+    System.out.print("Enter an integer from 0 and 50: ");
+    int number = scanner.nextInt();
+
+    if (number <= 0 || number >= 50) 
+    {
+      System.out.println("error");
+    } 
+    else 
+    {
+      for (int i = number; i <= 50; i++)
+      {
+        System.out.print(i + " ");
+
+        if ((i - number + 1) % 5 == 0)
+        {
+          System.out.println();
+        }
+      }
+    }
+    scanner.close();
   }
 }
